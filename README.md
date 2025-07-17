@@ -67,21 +67,13 @@ GoldTechETF/
 
 ---
 
-## 👤 Author
-
-**Chenyi Zhao**  
-MSDS Student @ Northwestern University   
-Term Project, Summer 2025  
-
----
-
-## 📚 References
+## References
 
 This project is guided by key literature on ETFs, technical trading strategies, risk management, and automated investing. Full citations are included in the `checkpoint_report.md` and `references/` folder.
 
 ---
 
-## 📝 License
+## License
 
 This is an academic project developed for educational purposes. All code and content are freely available under the MIT License unless otherwise noted.
 
