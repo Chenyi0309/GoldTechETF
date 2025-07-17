@@ -1,7 +1,6 @@
 # GoldTechETF: A Thematic, Actively Managed ETF
 
-This project is part of the Term Project for the MSiA program course taught by Professor Tom Miller (Revised July 16, 2025).  
-The goal is to design an **actively managed exchange-traded fund (ETF)** that combines data science methods with investment philosophy, and is ultimately implementable through automated, algorithmic trading.
+The goal of this project is to design an **actively managed exchange-traded fund (ETF)** that combines data science methods with investment philosophy, and is ultimately implementable through automated, algorithmic trading.
 
 ---
 
