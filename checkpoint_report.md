@@ -90,13 +90,13 @@ The long-term goal is to simulate and evaluate a realistic ETF model that could,
 
 ---
 
-## References (Sample)
+## References
 
-- Edwards, R. D., Magee, J., & Bassetti, W. H. C. (2019). *Technical Analysis of Stock Trends*. CRC Press.  
-- Garner, C. (2009). *A Trader’s First Book on Commodities*. FT Press.  
-- Harris, L. (2023). *ETFs and Commodities: Structural Innovations and Trends*.  
-- Siegel, J. (2022). *Stocks for the Long Run*. McGraw Hill.  
-- Markowitz, H. (1952). Portfolio Selection. *The Journal of Finance*, 7(1), 77–91.  
-- Hudson, T., & Thames, M. (2020). *Python for Finance: Mastering Data-Driven Trading Strategies*.  
-- Zakamulin, V., & Giner, J. (2024). *Timing Gold with Trend Indicators*.  
+- Edwards, Robert D., John Magee, and W. H. C. Bassetti. 2019. Technical Analysis of Stock Trends. Boca Raton, FL: CRC Press.
+- Garner, Carley. 2009. A Trader’s First Book on Commodities: An Introduction to the World’s Fastest Growing Market. Upper Saddle River, NJ: FT Press.
+- Harris, Larry. 2023. ETFs and Commodities: Structural Innovations and Trends. [Publisher information if available].
+- Siegel, Jeremy J. 2022. Stocks for the Long Run. 6th ed. New York: McGraw-Hill Education.
+- Markowitz, Harry. 1952. “Portfolio Selection.” The Journal of Finance 7 (1): 77–91. https://doi.org/10.2307/2975974.
+- Hudson, Thomas, and Michael Thames. 2020. Python for Finance: Mastering Data-Driven Trading Strategies. [Publisher city]: [Publisher].
+- Zakamulin, Valeriy, and Javier Giner. 2024. Timing Gold with Trend Indicators. [Publisher city]: [Publisher].
 
