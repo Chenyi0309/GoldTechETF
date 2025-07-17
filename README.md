@@ -57,14 +57,14 @@ The following tools and methods will be used throughout the project:
 ---
 
 ## Repository Structure
-
+```
 GoldTechETF/
 ├── README.md ← Project overview and background (this file)
 ├── checkpoint_report.md ← Week 3 checkpoint research report (50 points)
 ├── /data/ ← Financial data (e.g., CSVs of GLD, NASDAQ stocks)
 ├── /notebooks/ ← Jupyter notebooks for strategy design and testing
 └── /references/ ← Research articles, PDF papers, and citations
-
+```
 ---
 
 ## References
