@@ -17,13 +17,13 @@ The purpose of this ETF is to deliver an **algorithmically managed, dual-asset s
 
 ## Literature Review
 
-Research into thematic and actively managed ETFs has grown in the past decade. Studies such as **Harris (2023)** detail the growth of commodity-based ETFs and their use in portfolio hedging. **Siegel (2022)** emphasizes the long-term benefits of equity exposure, particularly in innovation-driven sectors like technology. 
+Research into thematic and actively managed ETFs has expanded significantly in the past decade. Harris (2023) discusses the structural evolution of commodity-based ETFs, including how they are used as macroeconomic hedging tools. Siegel (2022) supports the long-term effectiveness of equity investment strategies, with particular emphasis on innovation-driven sectors such as technology. These insights support the hybrid design of GoldTechETF, which combines growth and defensive components in one strategy.
 
-Technical trading strategies have been well documented in **Edwards, Magee, and Bassetti (2019)** and **Meyers (2011)**, where price-based indicators like moving averages and momentum filters are widely used for asset timing. For gold, **Garner (2009)** and **Zakamulin and Giner (2024)** highlight how trend-following systems can outperform static buy-and-hold models.
+Technical trading strategies have long played a central role in quantitative finance. Edwards, Magee, and Bassetti (2019) provide a foundational treatment of price-based methods such as moving averages and momentum filters. For commodity investing, particularly in gold, Garner (2009) offers a practical perspective for new traders, while Zakamulin and Giner (2022) demonstrate the superiority of trend-following rules in gold-focused portfolios under regime-switching models.
 
-On the portfolio optimization side, classic works by **Markowitz (1952)** and **Sharpe (1963)** provide a foundation for balancing return and risk, while recent quant strategies discussed in **Hudson and Thames (2020)** and **Grinold and Kahn (2023)** show how multi-asset allocation can be effectively automated using Python and modern APIs.
+From the portfolio optimization standpoint, Markowitz (1952) introduced Modern Portfolio Theory (MPT), which remains central to portfolio construction today. Sharpe (1964) added risk-adjusted return metrics that help evaluate asset efficiency. Building on these theories, Ma (2021) and Naik (2020) offer practical guidance on how to implement asset selection, diversification, and algorithmic trading logic using Python, including automation with financial APIs and machine learning models.
 
-This project draws inspiration from both academic research and real-world ETFs such as **ARKK (active tech ETF)** and **GLD (commodity ETF)**, combining their philosophies into one hybrid model.
+GoldTechETF draws inspiration from these academic frameworks as well as real-world ETF designs such as ARKK (an actively managed tech equity ETF) and GLD (a commodity ETF tracking gold). The proposed model leverages momentum-based equity screening and trend-informed commodity allocation to create a dynamic, rules-based, and implementable trading strategy.
 
 ---
 
@@ -92,11 +92,12 @@ The long-term goal is to simulate and evaluate a realistic ETF model that could,
 
 ## References
 
-- Edwards, Robert D., John Magee, and W. H. C. Bassetti. 2019. Technical Analysis of Stock Trends. Boca Raton, FL: CRC Press.
-- Garner, Carley. 2009. A Trader’s First Book on Commodities: An Introduction to the World’s Fastest Growing Market. Upper Saddle River, NJ: FT Press.
-- Harris, Larry. 2023. ETFs and Commodities: Structural Innovations and Trends. [Publisher information if available].
-- Siegel, Jeremy J. 2022. Stocks for the Long Run. 6th ed. New York: McGraw-Hill Education.
-- Markowitz, Harry. 1952. “Portfolio Selection.” The Journal of Finance 7 (1): 77–91. https://doi.org/10.2307/2975974.
-- Hudson, Thomas, and Michael Thames. 2020. Python for Finance: Mastering Data-Driven Trading Strategies. [Publisher city]: [Publisher].
-- Zakamulin, Valeriy, and Javier Giner. 2024. Timing Gold with Trend Indicators. [Publisher city]: [Publisher].
-
+- Edwards, Robert D., John Magee, and W. H. C. Bassetti. 2019. *Technical Analysis of Stock Trends*. 11th ed. Boca Raton, FL: CRC Press.  
+- Garner, Carley. 2009. *A Trader’s First Book on Commodities: An Introduction to the World’s Fastest-Growing Market*. Upper Saddle River, NJ: FT Press.  
+- Harris, Larry. 2023. *ETFs and Commodities: Structural Innovations and Trends*. Report.  
+- Siegel, Jeremy J. 2022. *Stocks for the Long Run*. 6th ed. New York: McGraw-Hill Education.  
+- Markowitz, Harry. 1952. “Portfolio Selection.” *The Journal of Finance* 7 (1): 77–91. https://doi.org/10.2307/2975974.  
+- Sharpe, William F. 1964. “Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk.” *The Journal of Finance* 19 (3): 425–442.  
+- Ma, Weiming. 2021. *Mastering Python for Finance*. 2nd ed. Birmingham, UK: Packt Publishing.  
+- Naik, Krish. 2020. *Hands-On Python for Finance*. Birmingham, UK: Packt Publishing.  
+- Zakamulin, Valeriy, and Javier Giner. 2022. “Optimal Trend Following Rules in Two-State Regime-Switching Models.” *Journal of Quantitative Finance* (preprint). https://allocatesmartly.com/zakamulins-optimal-trend-following.
