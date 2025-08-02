@@ -1,70 +1,92 @@
 # GoldTechETF: A Thematic, Actively Managed ETF
 
-The goal of this project is to design an **actively managed exchange-traded fund (ETF)** that combines data science methods with investment philosophy, and is ultimately implementable through automated, algorithmic trading.
+This project presents an actively managed exchange-traded fund (ETF) strategy that dynamically allocates capital between U.S. technology stocks and gold, guided by momentum and macroeconomic signals. The strategy is implemented in Python and includes full backtesting and visualization components.
 
 ---
 
 ## Project Overview
 
-**GoldTechETF** is an actively managed ETF designed to balance high-growth potential with risk protection by investing in two uncorrelated yet complementary asset classes:
+**GoldTechETF** is designed to balance high-growth potential with risk mitigation by investing in two complementary asset classes:
 
-1. **U.S. Technology Growth Stocks**  
-   - Focused on high-momentum stocks from the NASDAQ 100
-   - Represents the "growth engine" of the portfolio
+1. **U.S. Technology Growth Stocks**
+   - Selected based on 1-week momentum
+   - Represents the portfolio's growth engine
 
-2. **Gold Commodity ETF (e.g., GLD)**  
-   - Functions as a macroeconomic hedge during periods of inflation or volatility
-   - Offers a "defensive anchor" for the portfolio
+2. **Gold Commodity ETF (GLD)**
+   - Allocated based on a trend-following filter (SMA) and macro risk filter (VIX > 20)
+   - Serves as a macro hedge and defensive anchor
 
-This ETF is intended for **retail and institutional investors** seeking exposure to growth opportunities while maintaining downside protection through commodity diversification.
+This ETF is suitable for retail and institutional investors seeking tactical exposure to equity markets while retaining protection during periods of volatility.
 
 ---
 
 ## Investment Thesis
 
-The core thesis behind GoldTechETF is that:
-
-- **Technology equities** continue to drive innovation and market returns in the U.S. economy.
-- **Gold** retains its historical role as a safe-haven asset, especially during inflationary or uncertain economic conditions.
-- The **alternating market cycles** between risk-on (tech) and risk-off (gold) make this dual-asset approach more robust than single-theme funds.
-- Actively rebalancing between these components using transparent rules and market signals can enhance risk-adjusted returns.
+- **Tech equities** deliver sustained growth and innovation.
+- **Gold** remains a historical safe haven, especially in uncertain macro environments.
+- Combining these assets via active, rule-based reallocation can provide superior risk-adjusted returns over time.
 
 ---
 
-## Research Focus
+## Methodology
 
-This project investigates and implements:
+The strategy is:
 
-- **Momentum-based selection** of tech stocks using historical price changes (e.g., 10-day performance)
-- **Technical signal tracking** (e.g., moving averages, RSI) to manage gold ETF exposure
-- **Portfolio weighting schemes** (equal-weighted vs signal-based)
-- **Rebalancing frequency** (weekly or monthly, rule-driven)
-- **Automated implementation** using Python, yFinance, and backtesting frameworks
+- Momentum-driven (weekly ranking of NASDAQ tech stocks)
+- Rule-based GLD allocation using trend (SMA) and macro (VIX)
+- Equal-weighted among selected assets
+- Rebalanced weekly
+- Backtested over the 2020–2024 period
+
 
 ---
 
-## Tools & Methodology
+## Tools Used
 
 The following tools and methods will be used throughout the project:
 
-- `Python` (Pandas, NumPy, yfinance, backtrader)
-- Technical indicators (e.g., SMA, MACD, RSI)
-- Financial data APIs (Yahoo Finance)
-- Portfolio simulation & backtesting
-- Git/GitHub for version control and project collaboration
-- Markdown for documentation
+- `Python`: pandas, numpy, yfinance, matplotlib, seaborn
+- `Data Source`: Yahoo Finance API via `yfinance`
+- `Backtesting`: Custom logic (rules-based rebalancing)
+- `Visualization`: Cumulative returns, signal timelines, asset weight heatmaps
+- `Optional`: Streamlit app for parameter tuning (coming soon)
 
 ---
 
 ## Repository Structure
-```
+
+```bash
 GoldTechETF/
-├── README.md ← Project overview and background (this file)
-├── checkpoint_report.md ← Week 3 checkpoint research report (50 points)
-├── /data/ ← Financial data (e.g., CSVs of GLD, NASDAQ stocks)
-├── /notebooks/ ← Jupyter notebooks for strategy design and testing
-└── /references/ ← Research articles, PDF papers, and citations
+├── README.md                 # Project overview (this file)
+├── report.md                # Final project report (Week 10 deliverable)
+├── src/
+│   └── final_project.py     # Backtesting implementation script
+├── data/
+│   └── price_data.csv       # Optional: downloaded data backup
+├── images/
+│   ├── portfolio_vs_spy.png
+│   ├── gold_signal.png
+│   └── tech_weight_heatmap.png
+├── notebooks/
+│   └── strategy_demo.ipynb  # Jupyter demo (optional)
+├── streamlit_app/
+│   └── app.py               # Interactive dashboard (optional)
+└── references/
+    └── selected_papers.pdf  # Literature support
 ```
+---
+
+## Sample Outputs
+
+**Cumulative Return vs SPY:**  
+![Cumulative Portfolio Returns vs SPY](images/portfolio_vs_spy.png)
+
+**GLD Allocation Signal Timeline:**  
+![Gold Allocation Signal Timeline](images/gold_signal.png)
+
+**Tech Weight Heatmap Over Time:**  
+![Tech Stock Weights Over Time](images/tech_weight_heatmap.png)
+
 ---
 
 ## References
