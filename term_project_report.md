@@ -98,6 +98,3 @@ Future improvements could involve:
 
 The GoldTech ETF strategy presents a compelling, rules-based framework for navigating volatile markets. It outperformed a passive benchmark during key macro stress periods and maintained adaptability through dynamic equity selection. This highlights the value of blending tactical asset allocation with macro-informed hedging in a scalable ETF structure.
 
----
-
-*End of Report.*
