@@ -33,7 +33,7 @@ gold_ticker = "GLD"
 vix_ticker = "^VIX"
 
 all_tickers = tech_tickers + [gold_ticker, vix_ticker]
-data = yf.download(all_tickers, start=start_date, end=end_date)['Adj Close']
+data = yf.download(all_tickers, start=start_date, end=end_date)['Close']
 data = data.dropna()
 
 # Resample
