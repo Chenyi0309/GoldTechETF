@@ -71,13 +71,13 @@ See **`RUNME.md`** for the exact two-step pipeline.
 ## Repository Layout
 ```
 GoldTechETF/
-├─ Checkpoint_A/ # Week 4 research report
-├─ Checkpoint_B/ # Week 6 research report
-├─ Checkpoint_C/ # Week 8 research report
+├─ Checkpoint_A/ 
+├─ Checkpoint_B/ 
+├─ Checkpoint_C/ 
 ├─ Week10/
 │ ├─ 00_pipeline.ipynb # End-to-end MC pipeline (params + MC runs + figures)
 │ └─ mc/
-│ ├─ params.json # generated in step 1 (rename if needed)
+│ ├─ params.json # generated in step 1 
 │ ├─ hist_returns.csv # generated in step 1
 │ └─ out/
 │ ├─ summary.csv
